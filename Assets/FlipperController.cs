@@ -8,21 +8,20 @@ public class FlipperController : MonoBehaviour
     public Rigidbody2D rb;
     public HingeJoint2D joint;
     public float force = 100;
+    public InputAction flip;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        flip.Enable();
     }
 
     // Update is called once per frame
     void Update()
     {
-        var keyboard = Keyboard.current;
-        if (keyboard == null)
-            return;
-
-        if (keyboard.spaceKey.wasPressedThisFrame)
+        
+        if (flip.WasPressedThisFrame())
         {
             Fire();
         }
