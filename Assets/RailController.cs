@@ -16,6 +16,7 @@ public class RailController : MonoBehaviour
     public List<Vector2> nodePositions;
 
     public float maxNodeDist = 1;
+    List<Rigidbody2D> ballsToRemove = new List<Rigidbody2D>();
 
     void Start()
     {
@@ -32,9 +33,10 @@ public class RailController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        List<Rigidbody2D> ballsToRemove = new List<Rigidbody2D>();
+        if (managedBalls.Count <= 0) return;
+
         foreach (Rigidbody2D ball in managedBalls)
         {
             float speed = ball.linearVelocity.magnitude;
@@ -58,6 +60,7 @@ public class RailController : MonoBehaviour
                 col.isTrigger = false;
             }
         }
+        ballsToRemove.Clear();
     }
 
     Vector2 getVectorToNextNode(Vector2 pos, Vector2 velocity)
@@ -66,7 +69,7 @@ public class RailController : MonoBehaviour
         float minDist = maxNodeDist;
         foreach (Vector2 node in nodePositions)
         {
-            if (Vector2.Dot(velocity,node - pos) < .5)
+            if (Vector2.Dot(velocity,node - pos) < 0)
             {
                 continue;
             }
