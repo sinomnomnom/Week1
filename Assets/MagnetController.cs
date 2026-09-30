@@ -11,6 +11,7 @@ public class MagnetController : MonoBehaviour
     private bool active = true;
 
     public Light2D light2d;
+    public AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,6 +37,7 @@ public class MagnetController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         light2d.enabled = true;
+        audioSource.Play();
     }
 
     private void OnTriggerStay2D(UnityEngine.Collider2D collision)
@@ -48,6 +50,7 @@ public class MagnetController : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
+        audioSource.Pause();
         light2d.enabled = false;
         active = true;
         attached = false;
