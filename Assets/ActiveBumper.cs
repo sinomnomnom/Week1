@@ -28,7 +28,6 @@ public class ActiveBumper : MonoBehaviour
             collision.rigidbody.AddForce(-collision.GetContact(0).normal * force, ForceMode2D.Impulse);
             audioSource.PlayOneShot(bounceSound);
 
-
             System.Action<ITween<Vector3>> bounce = (t) =>
             {
                 sprite.transform.localScale = t.CurrentValue;

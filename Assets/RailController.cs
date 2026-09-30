@@ -67,6 +67,7 @@ public class RailController : MonoBehaviour
     {
         Vector2 direction = Vector2.zero;
         float minDist = maxNodeDist;
+        float maxDot = 0;
         foreach (Vector2 node in nodePositions)
         {
             if (Vector2.Dot(velocity,node - pos) < 0)
@@ -74,8 +75,11 @@ public class RailController : MonoBehaviour
                 continue;
             }
             if (minDist > Vector2.Distance(pos, node)){
-                minDist = Vector2.Distance(pos, node);
-                direction = Vector2.Normalize(node-pos);
+                if (maxDot < Vector2.Dot(pos, node))
+                {
+                    maxDot = Vector2.Dot(pos, node);
+                    direction = Vector2.Normalize(node - pos);
+                }
             }
         }
         return direction;

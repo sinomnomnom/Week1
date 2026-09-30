@@ -21,7 +21,7 @@ public class FlipperController : MonoBehaviour
     void Update()
     {
         
-        if (flip.WasPressedThisFrame())
+        if (flip.IsPressed())
         {
             Fire();
         }
