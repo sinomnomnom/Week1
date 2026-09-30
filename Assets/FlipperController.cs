@@ -29,6 +29,6 @@ public class FlipperController : MonoBehaviour
 
     public void Fire()
     {
-        rb.AddTorque(force);
+        rb.AddTorque(force*Time.deltaTime*60);
     }
 }

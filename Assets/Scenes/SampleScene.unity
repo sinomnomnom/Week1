@@ -1059,7 +1059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   rb: {fileID: 358704139}
   joint: {fileID: 358704138}
-  force: 50
+  force: 1000
   flip:
     m_Name: Flip
     m_Type: 0
@@ -2299,7 +2299,7 @@ LineRenderer:
   - {x: -3.106183, y: -0.09701061, z: -12.749548}
   - {x: -3.1292205, y: -0.6038265, z: -12.749548}
   - {x: -3.083146, y: -1.1106415, z: -12.749548}
-  - {x: -2.921887, y: -1.5944195, z: -12.749548}
+  - {x: -3.0087404, y: -1.7333851, z: -12.749548}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -2776,7 +2776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   rb: {fileID: 945725097}
   joint: {fileID: 945725096}
-  force: 100
+  force: 1000
   flip:
     m_Name: Flip
     m_Type: 0
@@ -4423,7 +4423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   rb: {fileID: 1585571337}
   joint: {fileID: 1585571336}
-  force: -100
+  force: -1000
   flip:
     m_Name: Flip
     m_Type: 0
