@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: cfcfb8f4f3fcd614c8329c8cfa0458f0
+guid: 461a511e5a0d8db409fe1bf589f20636
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1055362420863718629
-    second: wizard_pinball_ball_0
+      213: 6589863105897634471
+    second: wizard_pinball_trapdoors_closed_0
+  - first:
+      213: 8924874407703975271
+    second: wizard_pinball_trapdoors_closed_1
+  - first:
+      213: 4778248669258411565
+    second: wizard_pinball_trapdoors_closed_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +132,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wizard_pinball_ball_0
+      name: wizard_pinball_trapdoors_closed_0
       rect:
         serializedVersion: 2
-        x: 781
-        y: 2670
-        width: 92
-        height: 96
+        x: 501
+        y: 2306
+        width: 244
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e4d0ecb78665ae00800000000000000
-      internalID: 1055362420863718629
+      spriteID: 7aa1b798495e37b50800000000000000
+      internalID: 6589863105897634471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard_pinball_trapdoors_closed_1
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 2045
+        width: 299
+        height: 195
+      alignment: 9
+      pivot: {x: 0.50652647, y: 0.59006035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7659b20ecf58bdb70800000000000000
+      internalID: 8924874407703975271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard_pinball_trapdoors_closed_2
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 2077
+        width: 228
+        height: 136
+      alignment: 9
+      pivot: {x: 0.47432455, y: 0.4426054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e61a339dfbf4240800000000000000
+      internalID: 4778248669258411565
       vertices: []
       indices: 
       edges: []
@@ -151,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 43437a5a2546c8644baa5f36f6ddc852
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      wizard_pinball_ball_0: 1055362420863718629
+      wizard_pinball_trapdoors_closed_0: 6589863105897634471
+      wizard_pinball_trapdoors_closed_1: 8924874407703975271
+      wizard_pinball_trapdoors_closed_2: 4778248669258411565
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

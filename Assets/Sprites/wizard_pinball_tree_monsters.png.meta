@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: f029120f02fcddb48a2f5d14751de915
+guid: 29a0e91ed47e97544894fb1db8ddcafa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 944823246450506025
-    second: pinballball_normals_0
+      213: -2443760664091663061
+    second: wizard_pinball_tree_monsters_0
+  - first:
+      213: 1033635257352264297
+    second: wizard_pinball_tree_monsters_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
-    sRGBTexture: 0
+    enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -55,9 +58,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 1
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -126,23 +129,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pinballball_normals_0
+      name: wizard_pinball_tree_monsters_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 4
-        width: 182
-        height: 183
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 358
+        y: 2219
+        width: 386
+        height: 412
+      alignment: 9
+      pivot: {x: 0.66806155, y: 0.3543547}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 929b63c9cbfac1d00800000000000000
-      internalID: 944823246450506025
+      spriteID: b256eb4af94061ed0800000000000000
+      internalID: -2443760664091663061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard_pinball_tree_monsters_1
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 2031
+        width: 336
+        height: 307
+      alignment: 9
+      pivot: {x: 0.345544, y: 0.42075926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a1dc54ac5385e00800000000000000
+      internalID: 1033635257352264297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard_pinball_tree_monsters_2
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 2012
+        width: 423
+        height: 412
+      alignment: 9
+      pivot: {x: 0.6418591, y: 0.36222705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fcf5051c080f247aca373f02d1391c
+      internalID: 1174265264
       vertices: []
       indices: 
       edges: []
@@ -151,7 +198,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e3afc404a3513c5448bd14657deccaa3
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +208,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pinballball_normals_0: 944823246450506025
+      wizard_pinball_tree_monsters_0: -2443760664091663061
+      wizard_pinball_tree_monsters_1: 1033635257352264297
+      wizard_pinball_tree_monsters_2: 1174265264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

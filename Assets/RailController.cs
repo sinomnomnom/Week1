@@ -58,6 +58,7 @@ public class RailController : MonoBehaviour
             if(col != null)
             {
                 col.isTrigger = false;
+                ball.gameObject.layer = 0;
             }
         }
         ballsToRemove.Clear();
@@ -94,6 +95,7 @@ public class RailController : MonoBehaviour
             {
                 managedBalls.Add(collision.attachedRigidbody);
                 collision.isTrigger = true;
+                collision.gameObject.layer = 3;
             }
         }
     }

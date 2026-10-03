@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI text;
     public AudioSource audioSource;
     public AudioClip audioClip;
+
+    public GameObject ballPrefab;
+    public GameObject resetPoint;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,5 +27,10 @@ public class GameManager : MonoBehaviour
         score += delta;
         text.text = score.ToString();
         audioSource.PlayOneShot(audioClip);
+    }
+
+    public void newBall()
+    {
+        Instantiate(ballPrefab, resetPoint.transform.position, Quaternion.identity);
     }
 }

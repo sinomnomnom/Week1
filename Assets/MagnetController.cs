@@ -52,6 +52,20 @@ public class MagnetController : MonoBehaviour
     {
         audioSource.Pause();
         light2d.enabled = false;
+        if(active == false)
+        {
+            Debug.Log("likey ball");
+            if (collision.gameObject.tag == "Ball")
+            {
+                Debug.Log("def ball");
+                collision.gameObject.TryGetComponent<BallController>(out BallController ballController);
+                if(ballController != null)
+                {
+                    Debug.Log("enchant ball");
+                    ballController.Enchant();
+                }
+            }
+        }
         active = true;
         attached = false;
         timer = 0;
